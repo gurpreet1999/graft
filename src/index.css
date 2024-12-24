@@ -1,0 +1,14 @@
+.MuiButton-root:hover {
+  opacity: 0.8;
+}
+.form-control .MuiBox-root{
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  z-index: 100;
+}
+
+body {
+  margin: 0;
+}

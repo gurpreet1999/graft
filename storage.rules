@@ -1,0 +1,21 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    function isUserAdmin(userId) {
+      return firestore.get(/databases/(default)/documents/users/$(userId)).data.role == 'admin'
+    }
+
+    function isUserCandidate(userId) {
+      return firestore.get(/databases/(default)/documents/users/$(userId)).data.role == 'candidate'
+    }
+
+    match /documents/{userId}/{allFiles=**} {
+      // Admins are allowed to get the user's documents for verification
+      allow get: if isUserAdmin(request.auth.uid);
+
+      // Candidates are allowed to upload and delete the documents in their own folder
+      allow get, create, delete: if request.auth.uid == userId && isUserCandidate(request.auth.uid);
+    }
+  }
+}

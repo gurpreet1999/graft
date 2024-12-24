@@ -1,0 +1,3389 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "job_applications",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "job_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "candidate_data.first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "jobs",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "recruiter_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "jobs",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "recruiter_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "jobs",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "recruiter_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "jobs",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "recruiter_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "sms_campaigns",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "filters.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "recruiter_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "credits_spent",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "sms_campaigns",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "recruiter_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "credits_spent",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "sms_campaigns",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "recruiter_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "credits_spent",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "email",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "email",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "last_name",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "phone_number",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "email",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "email",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "last_name",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "email",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "personal_document.status",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "sector_experience_document.status",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "status",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "email",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "plan",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "pricing_plan",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "email",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "plan",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "pricing_plan",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "credits",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "email",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "pricing_plan",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "credits",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "email",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "pricing_plan",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "credits",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "email",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "email",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "credits",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.construction_card_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.construction_card_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.construction_card_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.construction_card_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.construction_card_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.construction_card_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.construction_card_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.construction_card_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.construction_card_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.construction_card_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.construction_card_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.construction_card_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.construction_role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.main_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.main_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.main_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.main_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.main_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.main_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.main_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.main_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.main_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.second_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.second_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.second_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.second_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.second_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.second_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.second_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.second_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.second_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.first_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.main_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.main_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.main_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.main_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.main_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.main_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.main_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.main_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.main_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.second_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.second_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.second_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.second_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.second_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.second_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.second_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.second_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.second_type_of_establishment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.years_of_experience",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "postal_code",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.second_role_preference",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experience.sector",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "phone_number",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "last_name",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "phone_number",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "personal_document.status",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "sector_experience_document.status",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "plan",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "pricing_plan",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "pricing_plan",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "credits",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "pricing_plan",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "pricing_plan",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "credits",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "credits",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "credits",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "status",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verified",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "first_name",
+          "order": "ASCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

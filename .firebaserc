@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "graft-staging",
+    "graft-staging": "graft-staging",
+    "graft-production": "graft-production"
+  },
+  "targets": {},
+  "etags": {}
+}

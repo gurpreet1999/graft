@@ -1,0 +1,121 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Function to get the role of a user
+    function getRole(userId) {
+      return get(/databases/$(database)/documents/users/$(userId)).data.role;
+    }
+
+    function getPricingPlan(userId) {
+      return get(/databases/$(database)/documents/users/$(userId)).data.pricing_plan;
+    }
+
+    function hasRecruiterAccess(userId) {
+      return getRole(userId) == 'recruiter' && getPricingPlan(userId) != 'free';
+    }
+
+    function isRecruiterForJob(userId, jobId) {
+      return get(/databases/$(database)/documents/jobs/$(jobId)).data.recruiter_id == userId;
+    }
+
+    function isRecruiterForCampaign(userId, campaignId) {
+      return get(/databases/$(database)/documents/sms_campaigns/$(campaignId)).data.recruiter_id == userId;
+    }
+
+    match /users/{userId} {
+      function isAffectingImportantFields(requestData, resourceData) {
+        return requestData.diff(resourceData).affectedKeys().hasAny(['credits', 'subscription_id', 'role', 'trial_used', 'pricing_plan'])
+      }
+
+      function isPersonalDocumentApprovalOrRejection(requestData, resourceData) {
+        return ('personal_document' in requestData) &&
+          requestData.personal_document.diff(resourceData.personal_document).affectedKeys().hasAny(['status']) && 
+          requestData.personal_document.status != 'pending';
+      }
+
+      function isSectorExperienceDocumentApprovalOrRejection(requestData, resourceData) {
+        return ('sector_experience_document' in requestData) &&
+          requestData.sector_experience_document.diff(resourceData.sector_experience_document).affectedKeys().hasAny(['status']) && 
+          requestData.sector_experience_document.status != 'pending';
+      }
+
+      function isVerifiedRequest(requestData, resourceData) {
+        return requestData.diff(resourceData).affectedKeys().hasAny(['verified']) && requestData.verified == true;
+      }
+
+      function isSecureRequestData(requestData, resourceData) {
+        return !(
+          isAffectingImportantFields(requestData, resourceData) || 
+          isVerifiedRequest(requestData, resourceData) ||
+          isPersonalDocumentApprovalOrRejection(requestData, resourceData) ||
+          isSectorExperienceDocumentApprovalOrRejection(requestData, resourceData)
+        );
+      }
+
+      // Users can only create their own account
+      allow create: if request.auth.uid == userId && !exists(/databases/$(database)/documents/users/$(userId));
+
+      // Admins can view and edit any users
+      allow get, list, update: if getRole(request.auth.uid) == 'admin';
+
+      // Recruiters can view all candidates
+      allow list: if resource.data.role == 'candidate' && hasRecruiterAccess(request.auth.uid);
+
+      // Recruiters can view specific candidates
+      allow get: if getRole(userId) == 'candidate' && hasRecruiterAccess(request.auth.uid);
+
+      // Users can read their own data
+      allow get: if request.auth.uid == userId;
+
+      // Only allow updates if the request doesn't modify the important fields
+      allow update: if request.auth.uid == userId && isSecureRequestData(request.resource.data, resource.data);
+    }
+
+    match /jobs/{jobId} {
+      // Recruiters can create jobs
+      allow create: if hasRecruiterAccess(request.auth.uid);
+
+      // Recruiters can view only their jobs
+      allow list: if request.auth.uid == resource.data.recruiter_id && hasRecruiterAccess(request.auth.uid);
+
+      // Recruiters can edit, read and delete jobs posted by themselves
+      allow get, update, delete: if hasRecruiterAccess(request.auth.uid) && isRecruiterForJob(request.auth.uid, jobId);
+      
+      // Candidates can read any jobs posted
+      allow read: if getRole(request.auth.uid) == 'candidate';
+
+      // Admins can read any jobs posted
+      allow read: if getRole(request.auth.uid) == 'admin';
+    }
+
+    match /job_applications/{jobApplicationId} {
+      // Candidates can create applications
+      allow create: if getRole(request.auth.uid) == 'candidate';
+
+      // Recruiters can read applications to their jobs
+      allow get, list: if hasRecruiterAccess(request.auth.uid) && isRecruiterForJob(request.auth.uid, resource.data.job_id);
+
+      // Candidates can write and read their own applications
+      allow get, list, update, delete: if getRole(request.auth.uid) == 'candidate' && request.auth.uid == resource.data.candidate_data.id;
+    }
+
+    match /sms_campaigns/{smsCampaignId} {
+      // All the campaigns logic will go through the backend as it involves payments.
+      allow write: if false;
+
+      // Admins can read all campaigns
+      allow list, get: if getRole(request.auth.uid) == 'admin';
+
+      // Recruiters can read their own campaigns
+      allow list: if hasRecruiterAccess(request.auth.uid) && request.auth.uid == resource.data.recruiter_id;
+      allow get: if hasRecruiterAccess(request.auth.uid) && isRecruiterForCampaign(request.auth.uid, smsCampaignId);
+    }
+
+    match /sms_campaigns_candidates/{smsCampaignCandidateId} {
+      // The candidates are stored for next rounds of campaigns, accessed through the backend.
+      allow read, write: if false;
+    }
+  }
+}
